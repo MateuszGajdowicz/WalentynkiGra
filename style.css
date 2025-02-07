@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(231, 74, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gameContainer{
+    width: 400px;
+    height: 300px;
+    background-color: pink;
+    border: 5px solid hsl(350, 100%, 78%);
+    border-radius: 10px;
+    position: relative;
+
+
+}
+.DogContainer{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0px;
+}
+.playerContainer{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+.ScoreContainer{
+    position: absolute;
+
+    text-align: center;
+    background-color: hsl(350, 100%, 85%);
+    top:30%;
+    left: 40px;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 5px hsl(350, 100%, 75%) solid;
+    font-size: 0.7em;
+}
+#ScoreCounter{
+    font-size:2em;
+}
+.TimeContainer{
+    position: absolute;
+    text-align: center;
+    background-color: hsl(350, 100%, 85%);
+    top:30%;
+    right: 40px;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 5px hsl(350, 100%, 75%) solid;
+    font-size: 0.7em;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+.SnackContainer{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+}
+
