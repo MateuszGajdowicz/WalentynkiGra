@@ -45,7 +45,6 @@ function RandomizeDog(){
 
     Dog.style.left = `${DogHorPosition}px`;
     Dog.style.top = `${DogVerPosition}px`;
-    
 }
 RandomizeDog();
 setInterval(RandomizeDog,4000);
@@ -61,6 +60,8 @@ function CheckCatch(){
         Counter++;
         ScoreCounter.textContent=Counter;
         RandomizeDog();
+        RandomizeImgIndex();
+
     }
 
 
@@ -87,7 +88,8 @@ function CheckSnack(){
         Math.abs(SnackVerPosition-PlayerVerPosition)<Distance
     ){
         Speed+=1;
-        RandomizeSnack();   
+        RandomizeSnack();
+   
     }
 }
 let Time=30;
@@ -104,3 +106,12 @@ const Countdown = setInterval(()=>{
     }
 },1000)
 
+function RandomizeImgIndex(){
+    let DogIndex = Math.floor((Math.random()*6)+1);
+    Dog.style.backgroundImage = `url('./puppy${DogIndex}.png')`;
+    Dog.style.backgroundSize = 'cover';
+    Dog.style.backgroundPosition = 'center';
+}
+Dog.style.backgroundImage = `url('./puppy1.png')`;
+Dog.style.backgroundSize = 'cover';
+Dog.style.backgroundPosition = 'center';
