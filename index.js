@@ -5,6 +5,7 @@ let ScoreCounter = document.getElementById("ScoreCounter");
 let TimeRemain = document.getElementById("TimeRemain");
 let TimeContainer = document.querySelector(".TimeContainer");
 let SnackContainer = document.querySelector(".SnackContainer");
+let FlowerContainer = document.querySelector(".FlowerContainer");
 
 
 let PlayerHorPosition = 0 ;
@@ -103,15 +104,19 @@ const Countdown = setInterval(()=>{
         Player.style.display="none";
         Dog.style.display="none";
         SnackContainer.style.display="none";
+        if(Counter>=10){
+            FlowerContainer.style.display = "block";
+            
+        }
     }
 },1000)
 
 function RandomizeImgIndex(){
     let DogIndex = Math.floor((Math.random()*6)+1);
-    Dog.style.backgroundImage = `url('./puppy${DogIndex}.png')`;
+    Dog.style.backgroundImage = `url('./images/puppy${DogIndex}.png')`;
     Dog.style.backgroundSize = 'cover';
     Dog.style.backgroundPosition = 'center';
 }
-Dog.style.backgroundImage = `url('./puppy1.png')`;
+Dog.style.backgroundImage = `url('./images/puppy1.png')`;
 Dog.style.backgroundSize = 'cover';
 Dog.style.backgroundPosition = 'center';

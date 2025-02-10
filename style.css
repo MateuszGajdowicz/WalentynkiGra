@@ -22,10 +22,13 @@ body{
     right: 0px;
 }
 .playerContainer{
-    background-color: black;
+    background-image: url('./images/player.jpg');
+    background-position: center;
+    background-size: cover;
     width: 50px;
     height: 50px;
     position: absolute;
+    border-radius: 50px;
     left: 0px;
     top: 0px;
 
@@ -64,8 +67,25 @@ body{
     position: absolute;
     width: 50px;
     height: 50px;
-    background-image: url('./snack.png');
+    background-image: url('./images/snack.png');
     background-size: cover;
     background-position: center;
     }
+.FlowerContainer{
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background-image: url('./images/flowers.png');
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    width: 200px;
+    display:none;
+    h3{
+        position: absolute;
+        bottom: -50;
+    }
+
+}
 
